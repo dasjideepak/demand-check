@@ -123,14 +123,27 @@ Every request carries a `demand-check` user agent, at most three detail or revie
 
 ## Use it from Claude Code
 
-Copy the skill folder into your skills directory:
+Install it as a plugin. In a Claude Code session:
+
+```
+/plugin marketplace add dasjideepak/demand-check
+/plugin install demand-check@dasjideepak
+```
+
+Or from your shell:
 
 ```sh
-# personal, every project
-cp -r skill/demand-check ~/.claude/skills/demand-check
+claude plugin marketplace add dasjideepak/demand-check
+claude plugin install demand-check@dasjideepak
+```
 
-# or one project only
-cp -r skill/demand-check <project>/.claude/skills/demand-check
+To get later versions, run `/plugin marketplace update dasjideepak`.
+
+Without the plugin system, copy the skill folder instead:
+
+```sh
+git clone https://github.com/dasjideepak/demand-check
+cp -r demand-check/skills/demand-check ~/.claude/skills/demand-check
 ```
 
 Then ask Claude "check demand for <idea>". The skill runs the CLI with `--json`, groups the complaint samples into themes, and writes a scorecard markdown file to `./reports/<slug>.md` (or the path you name). That grouping and the scorecard file are what the skill adds over the CLI.

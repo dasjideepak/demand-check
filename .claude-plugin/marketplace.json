@@ -1,0 +1,17 @@
+{
+  "name": "dasjideepak",
+  "owner": {
+    "name": "Deepak Sharma",
+    "url": "https://github.com/dasjideepak"
+  },
+  "plugins": [
+    {
+      "name": "demand-check",
+      "source": "./",
+      "description": "Check real demand for an app or package idea: top apps, installs, low-star complaints, npm downloads and a verdict."
+    }
+  ],
+  "metadata": {
+    "description": "Plugins by Deepak Sharma"
+  }
+}

@@ -9,7 +9,8 @@
   "files": [
     "bin",
     "src",
-    "skill",
+    "skills",
+    ".claude-plugin",
     "README.md",
     "LICENSE"
   ],
