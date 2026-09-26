@@ -2,9 +2,20 @@
   "name": "demand-check",
   "description": "Check real demand for an app or package idea before you build it: top Play Store and App Store apps, installs, low-star complaints, npm downloads and a verdict.",
   "version": "0.1.0",
-  "author": { "name": "Deepak Sharma", "url": "https://github.com/dasjideepak" },
+  "author": {
+    "name": "Deepak Sharma",
+    "url": "https://github.com/dasjideepak"
+  },
   "homepage": "https://github.com/dasjideepak/demand-check",
   "repository": "https://github.com/dasjideepak/demand-check",
   "license": "MIT",
-  "keywords": ["app-ideas", "market-research", "play-store", "app-store", "npm", "reviews"]
+  "keywords": [
+    "app-ideas",
+    "market-research",
+    "play-store",
+    "app-store",
+    "npm",
+    "reviews"
+  ],
+  "displayName": "Demand Check"
 }

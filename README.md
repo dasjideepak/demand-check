@@ -121,6 +121,12 @@ Store searches often return one unrelated giant for a niche term (a general stor
 
 Every request carries a `demand-check` user agent, at most three detail or review fetches run at once, and each request times out after 15 seconds. When one app's reviews or one package's download count fails, the error is listed in the report and the rest of the run continues.
 
+## What it runs and sends
+
+- It runs locally with Node. The Claude Code skill runs the bundled `bin/demand-check.js`; it does not download code at run time.
+- It sends only your search term (and the store country and language) to: Google Play (`play.google.com`), Apple's iTunes Search API and review feed (`itunes.apple.com`), and npm (`registry.npmjs.org`, `api.npmjs.org`).
+- It sends no personal data, reads no credentials, and has no analytics. Reports are written only where you point `--out`.
+
 ## Use it from Claude Code
 
 Install it as a plugin. In a Claude Code session:

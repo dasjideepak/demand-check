@@ -15,9 +15,11 @@ Turn the idea into a short store search phrase (two to four words, what a user w
 
 Pick the command in this order:
 
-1. `demand-check` if it is on PATH (`command -v demand-check`)
-2. `node bin/demand-check.js` if the current directory is the demand-check repo
-3. `npx --yes github:dasjideepak/demand-check`
+1. The CLI bundled with this skill: `node "${CLAUDE_SKILL_DIR}/../../bin/demand-check.js"` (installed as a Claude Code plugin, the repo root is two folders above this skill)
+2. `demand-check` if it is on PATH (`command -v demand-check`)
+3. `node bin/demand-check.js` if the current directory is the demand-check repo
+
+If none of these work, tell the user to install the tool (see the README) instead of downloading it yourself.
 
 Options:
 
@@ -28,7 +30,7 @@ Options:
 Example:
 
 ```sh
-npx --yes github:dasjideepak/demand-check "swipe photo cleaner" --country us --json --quiet --out reports/swipe-photo-cleaner.json
+node "${CLAUDE_SKILL_DIR}/../../bin/demand-check.js" "swipe photo cleaner" --country us --json --quiet --out reports/swipe-photo-cleaner.json
 ```
 
 Exit codes: `0` ok (per-source errors are inside the JSON), `1` every requested source failed (tell the user and stop; do not write a scorecard), `2` usage error (fix the arguments and retry once).
