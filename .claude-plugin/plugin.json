@@ -17,5 +17,6 @@
     "npm",
     "reviews"
   ],
-  "displayName": "Demand Check"
+  "displayName": "Demand Check",
+  "icon": "./.claude-plugin/icon.svg"
 }
