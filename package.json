@@ -1,6 +1,6 @@
 {
   "name": "demand-check",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Check real demand for an app or package idea before you build it: top apps, installs, low-star complaints, npm downloads and a verdict.",
   "type": "module",
   "bin": {

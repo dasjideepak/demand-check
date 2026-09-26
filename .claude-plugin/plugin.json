@@ -1,7 +1,7 @@
 {
   "name": "demand-check",
   "description": "Check real demand for an app or package idea before you build it: top Play Store and App Store apps, installs, low-star complaints, npm downloads and a verdict.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Deepak Sharma",
     "url": "https://github.com/dasjideepak"
